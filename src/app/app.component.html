@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nz-layout>
+  <nz-header>
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+  </nz-header>
+  <nz-content>
+    <div nz-row [nzGutter]="{ xs: 8, sm: 8, md: 8, lg: 8, xl: 8, xxl: 8 }">
+      <div nz-col nzSpan="6">
+        <app-doc-tree></app-doc-tree>
+      </div>
+      <div nz-col nzSpan="18">
+        <div id="md" (onComplete)="onComplate($event)" appEditorMd [editormdConfig]="conf"></div>
+      </div>
+    </div>
+  </nz-content>
+  <nz-footer>
+    <div>
+        Life Blog ©2018 Implement By Oliver
+    </div>
+  </nz-footer>
+</nz-layout>
+
+
+
